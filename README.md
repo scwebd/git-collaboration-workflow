@@ -2,6 +2,16 @@
 
 ## A Recommended Workflow for Git Team Collaboration
 
+### Contents
+- - -
+* [Setting up the repository](#setting-up-the-repository)
+* [Creating a new branch](#once-the-repository-is-set-up,-repeat-this-process-to-create-a-new-branch)
+* [Adding/committing to your branch](#as-you-work/make-changes-within-your-branch)
+* [Merge conflicts!!??!!](#merge-conflicts!!??!!)
+* [Merging master into your branch, pushing, and creating a pull request](#merging-master-into-your-branch,-pushing,-and-creating-a-pull-request)
+
+
+
 
 ### Setting up the repository:
 - - -
@@ -30,8 +40,19 @@
 - - -
 - Code away!
 - **Remember to add/commit your code each time you make progress you would be sad to lose!**
-    - Repeat until your task/feature is complete.     
+    - Repeat until your task/feature is complete. 
+
     
+### Merge conflicts!!??!!:
+- - -
+A merge conflict occurs when Git is unable to automatically reconcile differences in between the code changes of two different commits. (When all the changes in the code occur on different lines or in different files, Git will successfully merge together commits without a merge conflict.) When there are conflicting changes on the same lines, a merge conflict occurs because Git doesn’t know which code to keep/which to discard.
+
+> "Conflicts generally arise when two people have changed the same lines in a file, or if one developer deleted a file while another developer was modifying it. In these cases, Git cannot automatically determine what is correct. Conflicts only affect the developer conducting the merge, the rest of the team is unaware of the conflict. Git will mark the file as being conflicted and halt the merging process. It is then the developers' responsibility to resolve the conflict." - [Atlassian's wonderful Git documentation](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
+
+We recommend fixing merge conflicts through a combination of your command line (Terminal or Bash) and VSCode. Please work with an instructor or a TA for your first few merge conflicts, until you get a better handle on the process. **Always make sure to test your code *after* you've completed the merge conflict resolution but *before* you add/commit/push your changes.** This allows you to catch code issues immediately!
+
+**DO NOT ATTEMPT TO FIX MERGE CONFLICTS THROUGH THE GITHUB WEBSITE**, as this can cause broken code.
+
 
 ### Merging master into your branch, pushing, and creating a pull request:
 - - -
@@ -50,5 +71,6 @@ You typically do this before creating a pull request to merge your branch's code
     - Hit the 'submit pull request' button.
     - Request that one of your teammates approve/review your pull request.
     - After approval, either you or your approving teammate can merge the pull request. (note: this merge will integrate the approved code from your branch into the master branch.
+    - Optionally delete this branch on GitHub and the branch owner's local computer.
 9. Notify your teammates that new code has been added to 'master'!
 10. `git checkout master`, `git pull origin master`, and repeat the process above by creating a new branch.
