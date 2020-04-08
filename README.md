@@ -6,7 +6,7 @@
 - - -
 * [Setting up the repository](#setting-up-the-repository)
 * [Creating a new branch](#once-the-repository-is-set-up,-repeat-this-process-to-create-a-new-branch)
-* [Adding/committing to your branch](#as-you-work/make-changes-within-your-branch)
+* [Adding/committing to your branch](#as-you-work\/make-changes-within-your-branch)
 * [Merge conflicts!!??!!](#merge-conflicts!!??!!)
 * [Merging master into your branch, pushing, and creating a pull request](#merging-master-into-your-branch,-pushing,-and-creating-a-pull-request)
 
